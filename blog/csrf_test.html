@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <style>
+            #i{
+                margin: 0;
+                width: 100%;
+                height: 100%;
+            }
+            body, html{
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+        <iframe id="i" src="https://detail.tmall.com/item.htm?spm=a1z0d.6639537.1997196601.4.10307484MWPY8g&id=589449340567&sku_properties=30308:41420"></iframe>
+        <script>
+            var i = document.getElementById('i')
+            var w = i.contentWindow
+            var doc = w.document
+            console.log(doc)
+        </script>
+    </body>
+</html>
